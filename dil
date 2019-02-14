@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require_relative 'tmux'
+require_relative 'bare'
+
+if ENV['TMUX']
+  do_tmux
+else
+  do_bare
+end
